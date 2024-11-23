@@ -16,6 +16,10 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -88,17 +92,18 @@
         <div
           class="flex flex-col gap-y-4 md:flex-row md:gap-x-8 md:gap-8 lg:gap-16"
         >
-          <div class="flex flex-col w-full gap-y-2 md:w-1/3">
+          <div data-aos="flip-up" class="flex flex-col w-full gap-y-2 md:w-1/3">
             <img src="./assets/Image.png" />
             <p class="font-bold text-gray-700 md:text-[24px]">Free Bird</p>
             <p class="md:text-[20px]">Cihuy</p>
           </div>
-          <div class="flex flex-col w-full gap-y-2 md:w-1/3">
+          <div data-aos="flip-up" class="flex flex-col w-full gap-y-2 md:w-1/3">
             <img src="./assets/Image-1.png" />
             <p class="font-bold text-gray-700 md:text-[24px]">Purple Haze</p>
             <p class="md:text-[20px]">Jimmy Hendrix</p>
           </div>
           <div class="flex flex-col w-full gap-y-2 md:w-1/3">
+          <div data-aos="flip-up" class="flex flex-col w-full gap-y-2 md:w-1/3">
             <img src="./assets/Image-2.png" />
             <p class="font-bold text-gray-700 md:text-[24px]">You Really Got</p>
             <p class="md:text-[20px]">The Kinks</p>
@@ -183,6 +188,7 @@
 
     <section
       class="w-full flex flex-col py-16 px-4 text-center gap-y-4 md:max-w-[360px] md:mx-auto"
+      data-aos="fade-up"
     >
       <h2 class="text-3xl font-bold md:text-5xl">Thank You</h2>
       <p class="text-balance md:max-w-[400px] md:mx-auto">
@@ -234,4 +240,7 @@
       </div>
     </footer>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
